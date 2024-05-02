@@ -31,14 +31,12 @@ namespace api.Data.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CategoryId")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<int>("CourseId")
                         .HasColumnType("integer");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
@@ -161,7 +159,6 @@ namespace api.Data.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("PhoneNumber")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<int>("SchoolId")
@@ -225,7 +222,6 @@ namespace api.Data.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("PhoneNumber")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<int>("SchoolId")
@@ -293,7 +289,6 @@ namespace api.Data.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("PhoneNumber")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<int>("SchoolId")
@@ -331,7 +326,6 @@ namespace api.Data.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("PhoneNumber")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<int>("SchoolId")
@@ -474,8 +468,7 @@ namespace api.Data.Migrations
 
             modelBuilder.Entity("api.Models.Assignment", b =>
                 {
-                    b.Navigation("Category")
-                        .IsRequired();
+                    b.Navigation("Category");
 
                     b.Navigation("Grades");
                 });

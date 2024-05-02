@@ -23,7 +23,7 @@ public class Staff
     public string PhoneNumber { get; set; }
 
     [NotMapped]
-    public string? FullName { get { return $"{FirstName} {LastName}"; } }
+    public string FullName { get { return $"{FirstName} {LastName}"; } }
 
     
     public int SchoolId { get; set; }

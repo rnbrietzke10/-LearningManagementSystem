@@ -56,7 +56,7 @@ namespace api.Data.Migrations
                     LastName = table.Column<string>(type: "text", nullable: false),
                     Email = table.Column<string>(type: "text", nullable: false),
                     Address = table.Column<string>(type: "text", nullable: false),
-                    PhoneNumber = table.Column<string>(type: "text", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "text", nullable: true),
                     SchoolId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
@@ -80,7 +80,7 @@ namespace api.Data.Migrations
                     LastName = table.Column<string>(type: "text", nullable: false),
                     Email = table.Column<string>(type: "text", nullable: false),
                     Address = table.Column<string>(type: "text", nullable: false),
-                    PhoneNumber = table.Column<string>(type: "text", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "text", nullable: true),
                     SchoolId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
@@ -104,7 +104,7 @@ namespace api.Data.Migrations
                     LastName = table.Column<string>(type: "text", nullable: false),
                     Email = table.Column<string>(type: "text", nullable: false),
                     Address = table.Column<string>(type: "text", nullable: false),
-                    PhoneNumber = table.Column<string>(type: "text", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "text", nullable: true),
                     SchoolId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
@@ -128,7 +128,7 @@ namespace api.Data.Migrations
                     LastName = table.Column<string>(type: "text", nullable: false),
                     Email = table.Column<string>(type: "text", nullable: false),
                     Address = table.Column<string>(type: "text", nullable: false),
-                    PhoneNumber = table.Column<string>(type: "text", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "text", nullable: true),
                     SchoolId = table.Column<int>(type: "integer", nullable: false),
                     StaffId = table.Column<int>(type: "integer", nullable: true)
                 },
@@ -194,9 +194,9 @@ namespace api.Data.Migrations
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Name = table.Column<string>(type: "text", nullable: false),
-                    Description = table.Column<string>(type: "text", nullable: false),
+                    Description = table.Column<string>(type: "text", nullable: true),
                     CourseId = table.Column<int>(type: "integer", nullable: false),
-                    CategoryId = table.Column<string>(type: "text", nullable: false)
+                    CategoryId = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {

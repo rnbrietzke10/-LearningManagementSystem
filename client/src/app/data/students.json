@@ -1,0 +1,28 @@
+{
+  "results": [
+    {
+      "id": 1,
+      "firstName": "Luke",
+      "LastName": "Skywalker",
+      "email": "luke.skywalker@gmail.com",
+      "address": "123 Main St Tatooine",
+      "schoolId": 1
+    },
+    {
+      "id": 2,
+      "firstName": "Leia",
+      "LastName": "Organa",
+      "email": "leia.organa@gmail.com",
+      "address": "123 Court St Alderaan",
+      "schoolId": 1
+    },
+    {
+      "id": 3,
+      "firstName": "Han",
+      "LastName": "Solo",
+      "email": "han.solo@gmail.com",
+      "address": "123 Favela St Corellia",
+      "schoolId": 1
+    }
+  ]
+}

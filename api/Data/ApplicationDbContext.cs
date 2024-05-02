@@ -21,6 +21,6 @@ namespace api.Data
         public DbSet<Guardian> Guardians  { get; set; }
         public DbSet<School> Schools  { get; set; }
         public DbSet<Staff> Staff { get; set; }
-        public DbSet<Student> Student  { get; set; }
+        public DbSet<Student> Students  { get; set; }
     }
 }
