@@ -19,7 +19,9 @@ public class Course
 
     // Navigation Properties -- Creates Relationship in DB
 
-    public virtual School School { get; set; }
+     public virtual School School { get; set; }
+     
+     public virtual ICollection<Faculty> Faculty  { get; set; } = new HashSet<Faculty>();
 
      public virtual ICollection<Assignment> Assignments { get; set; } = new HashSet<Assignment>();
     

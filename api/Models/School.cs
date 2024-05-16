@@ -26,6 +26,6 @@ public class School
 
     public virtual District District { get; set; }
 
-    // public virtual ICollection<Course> Courses { get; set; } = new HashSet<Course>();
+     public virtual ICollection<Faculty> Faculty { get; set; } = new HashSet<Faculty>();
     
 }

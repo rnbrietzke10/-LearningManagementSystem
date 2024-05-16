@@ -12,8 +12,10 @@ public class Grade
     [Required]
     public decimal Score { get; set; }
     
+    [Required]
     public int StudentId { get; set; }
 
+    [Required]
     public int AssignmentId { get; set; }
     
     // Navigation Properties -- Creates Relatioship in DB

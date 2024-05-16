@@ -6,25 +6,27 @@ namespace api.Models;
 [Table("Staff")]
 public class Staff
 {
-       public int Id { get; set; }
+    public int Id { get; set; }
     
+      
     [Required]
+    [MaxLength(150)]
     public  string FirstName { get; set; }
 
     [Required]
+    [MaxLength(150)]
     public  string LastName { get; set; }
     
     [Required]
+    [MaxLength(350)]
     public string Email { get; set; }
     
     [Required] 
+    [MaxLength(350)]
     public string Address { get; set; }
-
+    
+    [MaxLength(20)]
     public string PhoneNumber { get; set; }
-
-    [NotMapped]
-    public string FullName { get { return $"{FirstName} {LastName}"; } }
-
     
     public int SchoolId { get; set; }
 

@@ -15,7 +15,7 @@ public class Assignment
     
     public int CourseId { get; set; }
     
-    public string CategoryId { get; set; }
+    public int CategoryId { get; set; }
 
     // Navigation Properties -- Creates Relationship in DB
 
